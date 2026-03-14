@@ -10,7 +10,7 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-st.set_page_config(page_title="GenAI Chatbot with Cost Optimization", layout="wide")
+st.set_page_config(page_title="Cost-Efficient GenAI Chatbot with Intelligent Model Routing", layout="wide")
 
 # ---------------- SIDEBAR ----------------
 with st.sidebar:
