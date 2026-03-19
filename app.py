@@ -113,7 +113,8 @@ def select_model(category):
 
 
 #router model
-router_llm = ChatGroq(api_key=groq_key or os.getenv("GROQ_API_KEY"), model="openai/gpt-oss-120b")
+if groq_key or gpt_key:
+    router_llm = ChatGroq(api_key=groq_key or os.getenv("GROQ_API_KEY"), model="openai/gpt-oss-120b")
 
 # Handle user message
 if user_input:
