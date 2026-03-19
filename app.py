@@ -115,6 +115,8 @@ def select_model(category):
 #router model
 if groq_key or gpt_key:
     router_llm = ChatGroq(api_key=groq_key or os.getenv("GROQ_API_KEY"), model="openai/gpt-oss-120b")
+else:
+    st.error("Please enter either groq or gpt api key along with the model name")
 
 # Handle user message
 if user_input:
